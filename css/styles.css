@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #191a19;
+}
+
+/* INDEX */
+.mainTitle{
+  background-color: lightskyblue;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  font-variant: small-caps;
+  font-size: 2em;
+  letter-spacing: 0.2em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-shadow: 1px 1px 2px black;    
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  align-content: center;   
+}
+.routeName p {
+  width: 100%;
+  color: #ff5041;
+  font-size: 2em;
+  font-weight: bold;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.center {
+  width: 1068px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.recomendation {
+  height: 350px;
+  width: 100%;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  box-shadow: 2.5px 2.5px 5px gray;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 60px;
+}
+.iframeRecomedation {
+  text-align: center;  
+}
+.more,
+.trends {
+  height: 200px;
+  margin-bottom: 60px;
+}
+.moreContent {
+  position: relative;
+  text-align: center;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  box-shadow: 2.5px 2.5px 5px gray;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;  
+}
+.moreItem {
+  display: inline-block;
+}
+.img1 {
+  height: 100%;
+  width: 100%;
+}
+.text2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ff5041;
+  padding: 2px;
+  text-shadow: 1px 1px 2px black;
+  margin-left: 5px;
+}
+.foot {
+  height: 75px;
+  width: 100%;
+  background-color: #191a19;
+  margin-top: 50px;
+  border-top-color: #ff5041;
+  border-top-style: solid;
+}
+.footcontainer {
+  height: 100%;
+  width: 80%;
+  padding: 20px;
+  margin: auto;
+}
+.note {
+  width: 65%;
+  color: rgba(255, 255, 255, 0.49);
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  margin: 0;
+  line-height: 1.5;
+  display: inline-block;
+}
+.footlogo {
+  width: 30%;
+  height: 100%;
+  margin-right: 0;
+  float: right;
+}
+.imglogo {
+  height: 50px;
+  width: auto;
+  float: right;
+  margin-top: 10px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.tedtalklogo {
+  width: 220px;
+  margin-bottom: -150px;
+}
+.feedform {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+
+  padding: 20px;
+  width: 40%;
+  margin: 20px 20px;
+}
+
+.feedform p {
+  color: #191a19;
+}
+
+.rating-category p,
+.rating-recommendation p {
+  width: 100%;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  display: block;
+}
+
+input[type="submit"] {
+  background-color: #ff5041;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0f100f;
+}
+
+/* Start Rating Feedback Form */
+
+#rating-star {
+  display: inline-block;
+}
+.star-rating form {
+  display: none;
+}
+.star-rating .thanks-msg {
+  display: none;
+  font-size: 20px;
+  margin: 40px auto;
+  color: #4caf50;
+  background-color: rgba(255, 251, 251, 0.956);
+  padding: 8px 20px;
+  border-left: 3px solid #4caf50;
+  border-radius: 20px;
+}
+.star-rating input {
+  display: none;
+}
+.star-rating {
+  margin: 50px auto;
+  display: table;
+  width: 350px;
+}
+.star-rating label {
+  padding: 10px;
+  float: right;
+  font-size: 44px;
+  color: rgb(107, 113, 114);
+}
+.star-rating input:not(:checked) ~ label:hover,
+.star-rating input:not(:checked) ~ label:hover ~ label {
+  color: #ffc107;
+}
+.star-rating input:checked ~ label {
+  color: #ffc107;
+}
+.star-rating form .rating-reaction:before {
+  width: 100%;
+  float: left;
+  color: #ffc107;
+}
+.star-rating #rating-1:checked ~ form .rating-reaction:before {
+  content: "I hate it";
+}
+.star-rating #rating-2:checked ~ form .rating-reaction:before {
+  content: "I don't like it";
+}
+.star-rating #rating-3:checked ~ form .rating-reaction:before {
+  content: "It is good";
+}
+.star-rating #rating-4:checked ~ form .rating-reaction:before {
+  content: "I like it";
+}
+.star-rating #rating-5:checked ~ form .rating-reaction:before {
+  content: "I love it";
+}
+.star-rating input:checked ~ form {
+  border-top: 1px solid #ddd;
+  width: 100%;
+  padding-top: 15px;
+  margin-top: 15px;
+  display: inline-block;
+}
+.star-rating form .rating-reaction {
+  font-size: 24px;
+  float: left;
+  text-transform: capitalize;
+}
+.star-rating form .submit-rating {
+  border: none;
+  outline: none;
+  background: #795548;
+  color: #ffc107;
+  font-size: 18px;
+  border-radius: 4px;
+  padding: 5px 15px;
+  cursor: pointer;
+  float: right;
+}
+form .submit-rating:hover {
+  background-color: #333;
+}
+
+.comments {
+  margin-top: 20px;
+  width: 80%;
+}
+
+/* Nav horizontal bar */
+
+.navbar {
+  margin: 80px 20px 50px -50px;
+  width: 100%;
+  color: white;
+  text-align: right;
+}
+
+.menu a {
+  font-size: 22px;
+  color: #777;
+  text-decoration: none;
+  transition: all 0.45s;
+  color: #ff5041;
+}
+
+.menu {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  margin-top: -50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu li {
+  width: 125px;
+  height: 50px;
+  transition: background-position-x 0.9s linear;
+  text-align: center;
+}
+
+.menu li:hover {
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
+  animation: line 1s;
+}
+
+.menu li a:hover a {
+  color: #d94f5c;
+}
+
+.menu li:not(:last-child) {
+  margin-right: 30px;
+}
+
+@keyframes line {
+  0% {
+    background-position-x: 390px;
+  }
+}
+
+/* CATEGORY ITEM */
+
+.categoryItem h1,
+p {
+  width: 60%;
+  color: #ffffff;
+}
+.categoryImage {
+  display: block;
+  cursor: pointer;
+}
+
+.watchNext ul {
+  display: table-row;
+}
+
+.watchNext li {
+  display: table-cell;
+  width: 320px;
+  padding: 0px 50px 0px 0px;
+}
+
+.watchNext h4 {
+  color: #ffffff;
+}
+
+.watchNext a.p2:hover,
+.watchNext a.p2:active {
+  color: #e2dfd2;
+}
+
+.nexttopic {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+
+/* CATEGORY */
+
+.category {
+  width: 100%;
+  display: inline-table;
+}
+
+.category ul {
+  display: table-row;
+}
+
+.category li {
+  display: table-cell;
+  width: 320px;
+  padding-right: 50px;
+}
+
+.category p2 {
+  color: #ff5041;
+  text-decoration: none;
+}
+
+a.p2:hover,
+a.p2:active {
+  color: #e2dfd2;
+}
+
+.category h2 {
+  color: #ff5041;
+}
+
+.category h4 {
+  color: #ffffff;
+  line-height: 1.5px;
+}
+
+.categoryStyleScience {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.categoryStyleScience h2 {
+  color: white;
+  font-size: 32px;
+}
+
+.categoryStyleScience a {
+  font-size: 22px;
+  color: #777;
+  text-decoration: none;
+  transition: all 0.45s;
+  color: #ff5041;
+}
+
+.categoryStyleBusiness {
+  font-family: Georgia, serif;
+}
+.categoryStyleBusiness h2 {
+  color: white;
+  font-size: 32px;
+}
+
+.categoryStyleBusiness a {
+  font-size: 22px;
+  color: #777;
+  text-decoration: none;
+  transition: all 0.45s;
+  color: #cd2727;
+}
+
+.categoryStyleTechnology {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.categoryStyleTechnology h2 {
+  color: white;
+  font-size: 32px;
+}
+
+.categoryStyleTechnology a {
+  font-size: 22px;
+  color: #777;
+  text-decoration: none;
+  transition: all 0.45s;
+  color: #ff7a41;
+}
